@@ -37,7 +37,6 @@ Collate:
     'GMS-class.R'
     'GMS_v4-class.R'
     'GenVisR.R'
-    'Lolliplot-class.R'
     'MutSpectra-class.R'
     'MutationAnnotationFormat_Virtual-class.R'
     'MutationAnnotationFormat-class.R'
