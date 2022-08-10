@@ -94,6 +94,7 @@ Collate:
     'geneViz_mergeRegions.R'
     'geneViz_mergeTypeRegions.R'
     'geneViz_mergeTypes.R'
+    'Lolliplot-class.R'
     'ideoView.R'
     'ideoView_buildMain.R'
     'ideoView_formatCytobands.R'
