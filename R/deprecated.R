@@ -1005,7 +1005,7 @@ waterfall_calcMutFreq <- function(x)
     
     # Obtain a data frame of mutation counts on the sample level
     mutation_counts <- table(x[,c('sample', 'trv_type')])
-    mutation_counts <- as.data.frame(data.table::melt(mutation_counts))
+    mutation_counts <- as.data.frame(reshape2::melt(mutation_counts))
     colnames(mutation_counts) <- c('sample', 'trv_type', 'mutation_total')
     
     return(mutation_counts)
@@ -1424,7 +1424,7 @@ waterfall_sampSort <- function(x, sampOrder=NULL)
     
     # recast the data going from long format to wide format, values in this data
     # are counts of a mutation call
-    wide_data <- data.table::dcast(x, sample ~ gene, fun.aggregate = length,
+    wide_data <- reshape2::dcast(x, sample ~ gene, fun.aggregate = length,
                                  value.var="trv_type")
     
     # apply a boolean function to convert the data frame values to 1's and 0's
